@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: radial-gradient(#02e89f, #172d36);
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  (rgb(22, 59, 66) #040d0f);
+    border-radius: 30px;
+    cursor: pointer;
+    transition:.2s;
+}
+h2.titulo{
+    color: rgb(250, 246, 246);
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: rgb(0, 0, 0);
+}
+/*estilo do caabeçalho*/
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: rgb(4, 16, 16);
+    transform: scale(1.05);
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(5, 87, 96);
+    transform: scale(1.05);
+}
+/* ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+padding: 40px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: centerS;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 36px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: Flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes FLutuar{
+    0%{
+        top: 0;
+        top: 30px;
+    }
+}
+/* ESPECIALIDADES*/
+section.especialidades{
+    padding: 40px 4%;
+
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box {
+    color: rgb(240, 231, 231);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #3f2c2c;
+    margin-top: 40px;
+    transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.especialidades .especialidades-box h3 {
+    font-size: 20px;
+}
+/* esstilo do sobre*/
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre {
+    color: rgb(255, 255, 255);
+}
+.sobre .txt-sobre h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 38px;
+}
+.sobre .txt-sobre h2 span{
+color: #000000;
+display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #080808;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transform: scale(1.05);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+}
+/* formulario para envio de mensagens*/
+section.formulario{
+    padding: 80px 4%;
+}
+section.formulario samp{ 
+    color: #02415c;
+} 
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input {
+    width: 100%;
+    background-color: #090a0b;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(234, 231, 231);
+    font-size: 18px;
+}
+form textarea {
+    background-color: #111313;
+    color: white;
+}
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 15px 8px;
+}
+footer p a {
+    color: rgb(251, 251, 251);
+}
